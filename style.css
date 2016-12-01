@@ -1,0 +1,377 @@
+/* Styles the front-end pages.  */
+
+article, aside, figcaption, figure, footer, header, main, nav, section{
+	display: block;
+}
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	-webkit-text-size-adjust:none;
+	-ms-text-size-adjust:none;
+	-moz-text-size-adjust:none;
+	text-size-adjust:none;
+}
+
+html{
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	display:-webkit-box;
+	-webkit-box-pack: center;
+	background-color: #F8F8F9;
+	background: linear-gradient(#cccccc, #e6e6e6);
+	background-attachment: fixed;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; /* Chosen for elegant, academic look. */
+}
+
+h1, h2, h3 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-shadow: -3px -3px rgba(50, 50, 50, .25);
+	text-align: center;
+}
+
+p{
+text-align: left;
+text-shadow: none;
+}
+
+p::first-letter{
+	font-size: 1.15em;
+	font-weight: bold;
+}
+
+
+.page{
+	width: 1600px;
+}
+
+.clearfix:before, .clearfix:after{
+	content: " ";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.clearfix{
+	*zoom: 1;
+}
+
+.masthead{
+	position: relative;
+	background-image: url("../img/Marte_Fjord.png"), url("../img/notes.jpg"); /* Img src: <a href='http://www.freepik.com/free-vector/colorful-musical-notes-swirl_753467.htm'>Designed by Freepik</a> */
+	background-position: 50% 102%;
+	background-repeat: no-repeat;
+	box-shadow: 5px 5px 6px 4px #999;
+	-webkit-box-shadow: 7px 7px 7px 7px #999;
+	border-radius: 20px 20px 0 0;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+}
+
+#header {
+	height: 260px;
+}
+
+.masthead .social-sites{
+	position: absolute;
+	top: 20px;
+	right: 5px;
+}
+
+
+.social-sites li{
+	display: inline;
+}
+
+.nav-main{
+	border-bottom: 1px solid gray;
+	padding: .45em 0 .5em;
+	background-color: ;
+}
+
+.nav-main li{
+	border-left: 1px solid gray;
+	display: inline-block;
+}
+
+.nav-main li:first-child{
+	border-left: none;
+	font-size: 125%;
+}
+
+.nav-main a{
+	color: #292929;
+	display: inline-block;
+	font-size: 1.05em;
+	font-weight: 700;
+	padding: .5em 1.15em .5em 1.4em;
+	font-variant: small-caps;
+	text-decoration: none;
+	text-shadow: -2px -2px #CCC;
+}
+
+.nav-main a:hover{
+	color: #D3D3D3;
+	text-decoration: underline;
+	text-shadow: none;
+	
+}
+
+
+/* Content and sidebar. */
+#content{
+	display: inline-block;
+	background-color: #FFFFFF;
+	border: 2px solid #999;
+}
+
+#entries{
+	width: 1200px;
+	padding: 10px;
+}
+
+#sidebar{
+	width: 350px;
+	float: right;
+	padding: 15px;
+}
+
+img#singer{
+	width: 69%;
+}
+
+ul.credentials {
+	padding-left: 10px;
+}
+
+.quote{
+	font-size: 15px;
+	text-shadow: none
+}
+
+/* About. */
+.post-blurb{
+	width: 816px;
+	margin-bottom: 20px;
+}
+
+#post-blurb-text{
+	text-align: justify;
+}
+
+/* Bookings. */
+input{
+	border-radius: 10px;
+	height: 30px;
+}
+
+textarea {
+	border-radius: 10px;
+    resize: none;
+}
+
+.button {
+	margin: auto;
+    border: none;
+    color: blue;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	height: 45px;
+	width: 70px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+	cursor: pointer;
+}
+
+#form{
+	width: 500px;
+	float: left;
+	margin-bottom: 25px;
+}
+
+#contacts{
+	float: left;
+	width: 650px;
+}
+
+#contacts_header{
+	margin: auto 0;
+}
+
+.contacts_pic{
+	float: center;
+}
+
+.contacts_email{
+	font-size: 0.8em;
+}
+
+/* Footer. */
+#footer{
+	text-align: center;
+	border-left: 1px solid #D3D3D3;
+	border-right: 2px solid #D3D3D3;
+	border-bottom: 2px solid #D3D3D3;
+	background-color: #FFFFFF;
+	border-radius: 0 0 20px 20px;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	height: 250px;
+	background-image: url("../img/violin.png");
+	background-repeat: no-repeat;
+	background-position: 92%;
+	padding-top: 10px;
+}
+
+#links{
+	width: 250px;
+	float: left;
+	margin-left: 40px;
+}
+
+
+#links ul{
+	list-style: none;
+	text-align: left;
+}
+
+#links ul a:link {
+	color: #000099;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+
+#links ul a:hover{
+	color: #f00;
+	text-decoration: underline;
+}
+
+#personal{
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+	padding-left: 20px;
+}
+
+#personal #acknowledgements{
+	font-weight: normal;
+	text-align: left;
+	list-style: none;
+}
+
+#acknowledgements li a:link{
+	color: #000099;
+	font-variant: small-caps;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+#acknowledgements li a:hover{
+	color: #f00;
+	text-decoration: underline;
+}
+
+
+#address{
+	width: 250px;
+	float: left;
+	text-align: left;
+	margin-left: 30px;
+}
+
+#address #email{
+	color: #000099
+}
+
+	/* Hoverbox. */
+	#gallery_tag{
+		margin-top: 25px;
+	}
+	
+	#entries_gallery{
+		width: 1200px;
+		padding-left: 8px;
+		padding-right: 27px;
+	}
+	
+	.hoverbox{
+		cursor: default;
+		list-style: none;
+	}
+	
+	.hoverbox a{
+		cursor: default;
+	}
+
+	.hoverbox a .preview{
+		display: none;
+	}
+	
+	.hoverbox a:hover .preview{
+		display: block;
+		position: absolute;
+		top: -33px;
+		left: -45px;
+		z-index: 1;
+	}
+	
+	.hoverbox img{
+		background: #FFF;
+		border-color: #AAA #CCC #DDD #BBB;
+		border-style: solid;
+		border-width: 1px;
+		color: inherit;
+		padding: 2px;
+		vertical-align: top;
+		width: 175px;
+	}
+	
+	.hoverbox li{
+		background: #EEE;
+		border-color: #DDD #BBB #AAA #CCC;
+		border-style: solid;
+		border-width: 1px;
+		color: inherit;
+		display: inline;
+		float: left;
+		margin: 3px;
+		padding: 5px;
+		position: relative;
+	}
+	
+	.hoverbox .preview{
+		border-color: #000;
+		width: 350px;
+	}
+	
+	.hoverbox a{
+		position: relative;
+	}
+	
+	.hoverbox a:hover{
+		display: block;
+		font-size: 100%;
+		z-index: 1;
+	}
+	
+	.hoverbox a:hover .preview{
+		top: -38px;
+		left: -50px;
+	}
+	

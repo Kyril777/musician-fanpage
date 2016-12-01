@@ -1,0 +1,166 @@
+/* Styles the control pages. */
+
+article, aside, figcaption, figure, footer, header, main, nav, section{
+	display: block;
+}
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+html{
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	display:-webkit-box;
+	-webkit-box-pack: center;
+	background: black;
+	background: radial-gradient(#E6E6E6, #404040);
+	background-attachment: fixed;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; /* Chosen for elegant, academic look. */
+}
+
+h2, h3 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-shadow: -3px -3px rgba(50, 50, 50, .25);
+	text-align: center;
+}
+
+#page_header{
+	font-size: 8.5em;
+	text-align: center;
+}
+
+.page{
+	max-width: 1200px;
+	margin-top: 5px;
+}
+
+.masthead{
+	position: relative;
+	border-radius: 25px 25px 0 0;
+	-webkit-border-radius: 25px 25px 0 0;
+	-moz-border-radius: 25px 25px 0 0;
+	height: 205px;
+	background: white;
+}
+
+#header {
+	height: 160px;
+}
+
+
+.nav-main{
+	border-top: 2px solid gray;
+	border-bottom: 1px solid gray;
+	padding: .45em 0 .5em;
+}
+
+.nav-main li{
+	border-left: 1px solid gray;
+	display: inline-block;
+}
+
+.nav-main li:first-child{
+	border-left: none;
+}
+
+.nav-main a{
+	color: #292929;
+	display: inline-block;
+	font-size: 1.05em;
+	font-weight: 700;
+	padding: .5em 1.15em .5em 1.4em;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: -1px -1px #FFF;
+}
+
+.nav-main a:hover{
+	color: #D3D3D3;
+	text-decoration: underline;
+	text-shadow: none;
+	
+}
+
+nav ul #not-active{
+   pointer-events: none;
+   cursor: default;
+}
+
+
+.button:link, .button:visited {
+	background-color: #595959;
+	color: #d9d9d9;
+    padding: 5px 4px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover, .button:active {
+	background-color: #d9d9d9;
+	color: #595959;
+} 
+
+.submitButton {
+	color: black;
+	padding: 7px 7px;
+	border:	none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #FFF;
+	cursor: pointer;
+}
+
+.submitButton:hover {
+	background-color: black;
+	color: white;
+	text-decoration: underline;
+}
+
+
+/* Content and sidebar. */
+#greeting{
+	text-indent: 1em;
+}
+
+
+#content{
+	display: inline-block;
+	background-color: #FFFFFF;
+	padding-top: 50px;
+	padding-left: 10px;
+}
+
+#entries{
+	width: 900px;
+	padding: 20px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+#sidebar{
+	width: 300px;
+	float: right;
+	padding: 20px;
+}
+
+.news{
+	font-size: 15px;
+}
+
+#footer{
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid gray;
+	border-bottom: 1px solid gray;
+	background-color: #FFFFFF;
+}
